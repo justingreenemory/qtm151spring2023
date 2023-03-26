@@ -99,9 +99,7 @@ Try it yourself!
 -- Select a new driver id (needs to be unique)
 -- Make sure to deparate arguments by a semicolon!
 
-INSERT INTO drivers  VALUES (5, 'Test','French',109);
 
-INSERT INTO drivers  VALUES (6, ' Test TEst', 'Spanish',3200);
 
 -- SQLBook: Markup
 # <span style="color:darkblue"> II. Dataset Operations </span>
@@ -187,8 +185,10 @@ Try it yourself!
 - Select "nationality" and "driver_id" for drivers <br>
 with more than 60 victories
 -- SQLBook: Code
-SELECT nationality, driver_id FROM drivers 
-WHERE victories > 60;
+-- Write your own code!
+
+
+
 -- SQLBook: Markup
 # <span style="color:darkblue"> III. Groupby + Chaining </span>
 
@@ -238,7 +238,7 @@ SELECT nationality,
        MIN(victories) AS min_victories,
        MAX(victories) AS max_victories
 FROM drivers
-WHERE (nationality = 'German') OR (nationality = 'French')
+WHERE nationality = 'German'
 GROUP BY nationality
 HAVING SUM(victories) > 50;
 -- SQLBook: Markup
