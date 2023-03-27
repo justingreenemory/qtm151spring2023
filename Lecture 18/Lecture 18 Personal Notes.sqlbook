@@ -130,7 +130,7 @@ WITH (DELIMITER ',', FORMAT csv, HEADER MATCH);
 -----  DELIMETER indicates values are comma separated ","
 -----  FORMAT indicates that this is a CSV
 -----  HEADER MATCH indicates that the first row contains column
------  names and should be ignored when importing.
+-----  names and should be ignored when importing.C:\Users\justi\OneDrive\Documents\GitHub\qtm151spring2023\Lecture 18\data\us_congress_members.csv
 -- SQLBook: Markup
 <font size = "5">
 
@@ -157,13 +157,13 @@ Try it yourself!
 SELECT * FROM us_congress_members
 ```
 -- SQLBook: Code
-# Write your own code
+-- Write your own code
 -- Note in the instructor's computer this is:
 -- You just have to change the FROM argument
---
--- COPY us_congress_members
--- FROM 'D:\GitHub\qtm151spring2023\Lecture 18\data\us_congress_members.csv'
--- WITH (DELIMITER ',', FORMAT csv, HEADER MATCH);
+
+ COPY us_congress_members
+ FROM 'C:\Users\justi\OneDrive\Documents\GitHub\qtm151spring2023\Lecture 18\data\us_congress_members.csv'
+--WITH (DELIMITER ',', FORMAT csv, HEADER MATCH);
 
 
 
