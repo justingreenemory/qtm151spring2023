@@ -149,7 +149,8 @@ upper case and lower case letters
 SELECT "driverId", 
 AVG(milliseconds) AS avg_milliseconds
 FROM lap_times
-GROUP BY "driverId";
+GROUP BY "driverId"
+ORDER BY AVG(milliseconds) ;
 
 
 -- SQLBook: Markup
